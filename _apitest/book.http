@@ -1,0 +1,28 @@
+### get book
+GET http://localhost:8000/bookshelf/api/v1/book
+
+### get book by user
+GET http://localhost:8000/bookshelf/api/v1/book/my-book
+
+### create book
+POST http://localhost:8000/bookshelf/api/v1/book/add-book
+Content-Type: application/json
+
+{
+    "title": "Buku mulya dua",
+    "author": "fulan",
+    "description": "belajar api",
+    "isDone": false
+}
+
+### update book
+PATCH http://localhost:8000/bookshelf/api/v1/book/66ba4734b9746761e0865ca2
+Content-Type: application/json 
+
+{
+  "title": "Buku mulya update",
+  "isDone": true
+}
+
+### delete book
+DELETE http://localhost:8000/bookshelf/api/v1/book/66ba3ae0c821558118a2cf77
